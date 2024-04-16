@@ -1,0 +1,9 @@
+ide jonnek a typek kulon fajlokba
+
+pl HouseType.ts
+
+export type HouseType = {
+  price: number;
+  name: string;
+  stb...
+}

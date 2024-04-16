@@ -1,0 +1,9 @@
+ide jonnek a seged fuggvenyek kulon fajlokba
+
+pl ha kell egy olyan fuggveny ami leroviditi a descriptiont (leirasat egy haznak)
+
+useShortDescription.ts
+
+export const useShortDescription = (description) => {
+return visszateriti roviditve a description
+}

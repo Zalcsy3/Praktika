@@ -1,13 +1,190 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f7;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 95%;
+  background-color: #f2f2f7;
+}
+
+.container {
+  background-color: #f2f2f7;
+  min-height: 100%;
+
+}
+
+.main {
+  display: flex;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08), 0 6px 4px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.main .login {
+
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 30px;
+  
+}
+
+.container .login .button1 {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: black;
+  border-radius: 15px;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: rgb(28, 102, 151);
+  margin-left: auto;
+  font-size: 15px;
+
+}
+
+
+img {
+  float: left;
+  width: 10%;
+  align-items: center;
+  padding: 10px 10px;
+
+}
+
+.menu {
+  display: flex;
+  text-align: center;
+  float: left;
+  padding: 15px;
+
+}
+
+.lista_menu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px;
+  font-size: 25px;
+  padding: 10px 10px 15px 15px;
+}
+
+.menu_link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 15px 15px 15px;
+}
+
+.menu_link:hover {
+  background-color: rgb(28, 102, 151);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.login-form {
+  background: #fff;
+  width: 500px;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 4px 2px 6px 4px rgba(0, 0, 0, 0.08), 6px 6px 4px 0 rgba(0, 0, 0, 0.20);
+  
+}
+
+.login_cim {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: relative;
+  height: 60px;
+  padding: 20px;
+
+
+}
+
+.login-form .content {
+  padding: 35px;
+  text-align: center;
+
+}
+
+.login-form .input-field {
+  padding: 12px 5px;
+}
+
+.login-form .input-field input {
+  font-size: 16px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 10px 1px;
+  border: 0;
+  border-bottom: 1px solid #747474;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+
+.login-form .input-field input:focus {
+  border-color: rgb(28, 102, 151);
+}
+
+.login-form .action {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 20px;
+
+
+
+}
+
+.login-form .action .button2 {
+  width: 23%;
+  border: none;
+  padding: 18px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  color: black;
+  border-radius: 15px;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: rgb(28, 102, 151);
+  font-size: 15px;
+}
+
+
+
+footer {
+  overflow: auto;
+  color: #a0a0a3;
+  text-align: center;
+  position: relative;
+  height: 60px;
+
 }

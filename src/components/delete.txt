@@ -1,0 +1,11 @@
+Ide jonnek a componensek amiket tobb helyen hasznalsz, mindegyiknek sajat mappat csinalsz, peldaul
+
+AppBar mappa es abban az AppBar.tsx ez a felso resz az oldalon ahol a logo es gombok vannak
+
+kell egy Layout neked amit minden oldalon hasznalsz ami 3 componensbol all
+
+AppBar ez a header
+CustomMain ez ahol elhelyezkednek a dolgok az oldalon
+Footer ez alul az informacios resz tudod basic mint mas oldalakon is
+
+es akkor ezt a Layout hivod minden oldalon es ez koze rakod ott a contentet es o kell tudja, hogy hova helyezze el a dolgokat

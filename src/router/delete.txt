@@ -1,0 +1,3 @@
+itt kell osszerakni a route-kat es akkor o tudja melyik linken melyik paget hivja be
+
+behuztam egy peldat

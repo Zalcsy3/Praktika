@@ -1,3 +1,4 @@
+import { theme } from "../theme";
 body {
   background-color: #f2f2f7;
   width: 100vw;
@@ -48,7 +49,7 @@ html,body {
   color: #fff;
   -webkit-transition: all .3s;
   transition: all .3s;
-  background-color: rgb(28, 102, 151);
+  background-color: #1c6697;
   margin-left: auto;
   font-size: 15px;
 
@@ -57,7 +58,7 @@ html,body {
 
 img {
   float: left;
-  width: 10%;
+  width: 12%;
   align-items: center;
   padding: 10px 10px;
 

@@ -1,0 +1,4 @@
+ide jonnek az oldalak amik szinten kulon mappaba jonnek es a mappa nevet adod a routenek is
+
+pl
+login mappa Login.tsx es ide jon a Login oldalad amit osszeraksz

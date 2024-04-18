@@ -1,0 +1,7 @@
+ide jonnek a konstansok amiket esetleg tobb helyen kell hasznalja
+egy fajlba mehet pl 
+constant.ts
+pl 
+export AppBarHeight = 64;
+
+ezt importolod az Appbarba es ezt allitod be heightnak, es akkor a CustomMainek(ahova az oldal tartalma jon) oda is beimportolod es ezt adod meg padding-top-nak hogy annyival lennebb keruljon es ne takarja ki a kontenten a header

@@ -1,0 +1,3 @@
+ide jonnek a themazos dolgok, utanna kell nezni hogy hogy van a MUI-ban a themazas, pl be tudod allitani melyik legyen a primary color es akkor azt hasznalod mindenhol nem kell mindenhova a hexat beird
+
+$color-primary: blue;

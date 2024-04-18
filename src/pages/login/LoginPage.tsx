@@ -28,7 +28,7 @@ const LoginPage = () => {
               Login
             </Typography>
             <TextField placeholder="Username" label="Username" />
-            <TextField placeholder="Username" label="Username" />
+            <TextField placeholder="Password" label="Password" />
             <Button sx={{ mt: 3 }} variant="contained">
               Login
             </Button>

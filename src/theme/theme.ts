@@ -1,21 +1,21 @@
-import { createTheme} from '@mui/material/styles';
+// import { createTheme} from '@mui/material/styles';
 
-export const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1c6697', // Kék fő szín
-    },
-    background: {
-      default: '#f2f2f7', // Háttér szín
-    },
-    text: {
-      primary: '#000', // Fő szövegszín
-      secondary: '#a0a0a3', // Másodlagos szövegszín
-    },
-  },
-});
+// export const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: '#1c6697', // Kék fő szín
+//     },
+//     background: {
+//       default: '#f2f2f7', // Háttér szín
+//     },
+//     text: {
+//       primary: '#000', // Fő szövegszín
+//       secondary: '#a0a0a3', // Másodlagos szövegszín
+//     },
+//   },
+// });
 
-/*
+
 import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
@@ -25,6 +25,7 @@ export const theme = createTheme({
     },
     background: {
       default: '#f2f2f7',
+      
     },
     text: {
       primary: '#000',
@@ -37,7 +38,7 @@ export const theme = createTheme({
       'sans-serif',
     ].join(','),
   },
-  overrides: {
+  overrides: { //nem ertem miert nem megy, miert nem talalja
     MuiButton: {
       root: {
         borderRadius: '15px',
@@ -49,7 +50,7 @@ export const theme = createTheme({
           fontFamily: 'Roboto, sans-serif',
         },
         '& .MuiInput-underline:before': {
-          borderBottomColor: '#747474',
+          borderBottomColor: 'background.default',
         },
         '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
           borderBottomColor: 'primary.main',
@@ -58,4 +59,3 @@ export const theme = createTheme({
     },
   },
 });
-*/

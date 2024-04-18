@@ -13,6 +13,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
     <CustomAppbar />
     <Box sx={{ mt: '75px'}}>{children}</Box>
     <Footer />
+    <Box sx={{ mt: '181.5px'}}></Box>
     </>
   )
 }

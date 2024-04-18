@@ -1,22 +1,20 @@
 import { FC, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProtectedRoute from "./appGuard";
 import { routes } from "./routes";
-import LoadingScreen from "../components/common/loading-screen";
 import { v4 as uuid } from "uuid";
 
 const AppRoutes: FC = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<ProtectedRoute />}>
+                <Route path="/">
                     {routes.map(({ isIndex, path, page: Page }) => (
                         <Route
                             key={uuid()}
                             index={isIndex}
                             path={path}
                             element={
-                                <Suspense fallback={<LoadingScreen />}>
+                                <Suspense >
                                     <Page />
                                 </Suspense>
                             }

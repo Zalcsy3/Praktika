@@ -16,10 +16,10 @@ const LoginPage = () => {
     <Layout>
       <Stack
         width={"100%"}
-        height={'100vh'}// A header és a footer magassága(120px+64px)
+        // A header és a footer magassága(120px+64px)
         alignItems={"center"}
         justifyContent={"center"}
-        sx={{backgroundColor: theme.palette.background.default,}}
+        sx={{backgroundColor: theme.palette.background.default, marginTop:"150px"}}
       >
         <Paper
           sx={{

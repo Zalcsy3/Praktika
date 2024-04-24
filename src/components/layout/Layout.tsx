@@ -13,11 +13,12 @@ const Layout: FC<LayoutProps> = ({children}) => {
     <>
     
     <CustomAppbar />
-    <Box>{children}</Box>
-    <CustomMain/>
+    <CustomMain>{children}</CustomMain> 
     <Footer />
     </>
   )
 }
 
 export default Layout
+
+

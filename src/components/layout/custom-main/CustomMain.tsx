@@ -1,9 +1,12 @@
-import { Box, Container, useTheme } from '@mui/material';
-import React from 'react';
+import { Box } from '@mui/material';
+import React, { FC, ReactNode } from 'react';
+import { theme } from '../../../theme/theme';
 
-const CustomMain = () => {
-  const theme = useTheme();
+type CustomMainProps = {
+  children: ReactNode;
+};
 
+const CustomMain: FC<CustomMainProps> = ({ children }) => {
   return (
     <Box
       component="main"
@@ -14,7 +17,7 @@ const CustomMain = () => {
         paddingBottom: theme.spacing(3),
       }}
     >
-      
+      {children}
     </Box>
   );
 };

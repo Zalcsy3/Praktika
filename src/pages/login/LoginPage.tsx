@@ -8,22 +8,29 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import CustomMain from "../../components/layout/custom-main/CustomMain";
+import { theme } from "../../theme/theme";
 
 const LoginPage = () => {
   return (
     <Layout>
-      <Stack width={"100%"} alignItems={"center"}>
+      <Stack
+        width={"100%"}
+        height={'100vh'}// A header és a footer magassága(120px+64px)
+        alignItems={"center"}
+        justifyContent={"center"}
+        sx={{backgroundColor: theme.palette.background.default,}}
+      >
         <Paper
           sx={{
             width: 500,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             p: 4,
-            borderRadius: 4
+            borderRadius: 4,
+            boxShadow: '0 0 6px 0 rgba(0, 0, 0, 0.08), 0 6px 4px 0 rgba(0, 0, 0, 0.2)',
+            
           }}
         >
-          <Stack alignItems={"center"} justifyContent={"center"} gap={2}>
+          <Stack alignItems={"center"} justifyContent={"center"} gap={2} sx={{}}>
             <Typography variant="h4" sx={{ mb: 3 }}>
               Login
             </Typography>
@@ -35,8 +42,11 @@ const LoginPage = () => {
           </Stack>
         </Paper>
       </Stack>
-    </Layout>
-  );
+    
+  </Layout>
+);
 };
 
 export default LoginPage;
+
+

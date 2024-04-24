@@ -13,8 +13,9 @@ const App = () => {
       <CssBaseline />
       <CustomThemeProvider>
         <AppRoutes />
+        
       </CustomThemeProvider>
-      <Footer></Footer>
+      
     </>
   );
 };

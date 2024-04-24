@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from 'react'
 import CustomAppbar from './custom-appbar/CustomAppbar';
+import CustomMain from './custom-main/CustomMain';
 import Footer from './footer/Footer';
 import { Box } from '@mui/material';
 
@@ -10,10 +11,11 @@ type LayoutProps = {
 const Layout: FC<LayoutProps> = ({children}) => {
   return (
     <>
+    
     <CustomAppbar />
-    <Box sx={{ mt: '75px'}}>{children}</Box>
+    <Box>{children}</Box>
+    <CustomMain/>
     <Footer />
-    <Box sx={{ mt: '181.5px'}}></Box>
     </>
   )
 }

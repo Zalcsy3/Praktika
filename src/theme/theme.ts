@@ -1,35 +1,21 @@
-// import { createTheme} from '@mui/material/styles';
-
-// export const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: '#1c6697', // Kék fő szín
-//     },
-//     background: {
-//       default: '#f2f2f7', // Háttér szín
-//     },
-//     text: {
-//       primary: '#000', // Fő szövegszín
-//       secondary: '#a0a0a3', // Másodlagos szövegszín
-//     },
-//   },
-// });
-
-
 import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#1c6697',
+      main: '#fff', //feher
+      
+       
+
     },
     background: {
-      default: '#f2f2f7',
+      default: '#f2f2f7', //oldalszin
       
+
     },
     text: {
-      primary: '#000',
-      secondary: '#a0a0a3',
+      primary: '#000', //fekete
+       //szurke
     },
   },
   typography: {
@@ -38,24 +24,33 @@ export const theme = createTheme({
       'sans-serif',
     ].join(','),
   },
-  overrides: { //nem ertem miert nem megy, miert nem talalja
+  components: {
     MuiButton: {
-      root: {
-        borderRadius: '15px',
+      styleOverrides: {
+        root: {
+          borderRadius: '15px',
+          backgroundColor:'#045bb1', //kek
+          color:'#fff',
+        },
       },
     },
+    
     MuiTextField: {
-      root: {
-        '& .MuiInputBase-input': {
-          fontFamily: 'Roboto, sans-serif',
-        },
-        '& .MuiInput-underline:before': {
-          borderBottomColor: 'background.default',
-        },
-        '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-          borderBottomColor: 'primary.main',
+      styleOverrides: {
+        root: {
+          '& .MuiInputBase-input': {
+            fontFamily: 'Roboto, sans-serif',
+          },
+          '& .MuiInput-underline:before': {
+            borderBottomColor: 'background.default',
+          },
+          '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
+            borderBottomColor: 'background.default',
+          },
         },
       },
     },
   },
 });
+
+

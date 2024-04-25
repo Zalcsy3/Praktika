@@ -11,7 +11,6 @@ type LayoutProps = {
 const Layout: FC<LayoutProps> = ({children}) => {
   return (
     <>
-    
     <CustomAppbar />
     <CustomMain>{children}</CustomMain> 
     <Footer />

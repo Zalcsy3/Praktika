@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 export const theme = createTheme({
   palette: {
     primary: {
+      //TODO: ertelmetlen a mainnek a feheret adni, valami olyant adj amit sokat hasznalsz, mert a feheret tudud ugy is hogy 'white' hasznalni
       main: '#fff', //feher
       
        
@@ -14,6 +15,7 @@ export const theme = createTheme({
 
     },
     text: {
+      //TODO: ennek is ugyan az a feketet hasznalhatod hogy 'black' ide custom szinek kellenek ha vannak
       primary: '#000', //fekete
        //szurke
     },
@@ -29,6 +31,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: '15px',
+          //TODO: pl egy ilyen szint kivenni es hasznalni hogy ne hex kodot adj itt
           backgroundColor:'#045bb1', //kek
           color:'#fff',
         },

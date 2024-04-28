@@ -1,12 +1,10 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Button } from '@mui/material';
 
 export const theme = createTheme({
   palette: {
     primary: {
-      //TODO: ertelmetlen a mainnek a feheret adni, valami olyant adj amit sokat hasznalsz, mert a feheret tudud ugy is hogy 'white' hasznalni
       main: '#fff', //feher
-      
-       
 
     },
     background: {
@@ -15,9 +13,9 @@ export const theme = createTheme({
 
     },
     text: {
-      //TODO: ennek is ugyan az a feketet hasznalhatod hogy 'black' ide custom szinek kellenek ha vannak
       primary: '#000', //fekete
-       //szurke
+      secondary: '#757575', // szürke
+      
     },
   },
   typography: {
@@ -31,8 +29,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: '15px',
-          //TODO: pl egy ilyen szint kivenni es hasznalni hogy ne hex kodot adj itt
-          backgroundColor:'#045bb1', //kek
+          backgroundColor: '#045bb1',
           color:'#fff',
         },
       },
@@ -45,10 +42,10 @@ export const theme = createTheme({
             fontFamily: 'Roboto, sans-serif',
           },
           '& .MuiInput-underline:before': {
-            borderBottomColor: 'background.default',
+            borderBottomColor: 'palette.primary.main',
           },
           '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-            borderBottomColor: 'background.default',
+            borderBottomColor: 'palette.primary.main',
           },
         },
       },

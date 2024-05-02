@@ -5,7 +5,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: '#fff', //feher
-
+      light:"#cdcdcd",//szurke vilagos
     },
     background: {
       default: '#f2f2f7', //oldalszin

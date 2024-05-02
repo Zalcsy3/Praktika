@@ -8,6 +8,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { theme } from "../../theme/theme";
 
 
 const LoginPage = () => {
@@ -32,9 +33,14 @@ const LoginPage = () => {
             <Typography variant="h4" sx={{ mb: 3 }}>
               Login
             </Typography>
-            {/* TODO: nem jo a tema a textfieldnek amikor rakattintok eltunik a border ami nem jo, plusz tehetsz ide MUI-bol icont is hogy a passwordhoz egy kulcs a username-hez egy emberke, MUI icons igy keress ra es ott tudsz valasztani, es nezd meg hogy lehet a textfeildhez hozzaadni a dokumentacioban */}
-            <TextField placeholder="Username" label="Username" />{/* TODO Zalan ezt nem tudom elkepzelni hogy kell */}
-            <TextField placeholder="Password" label="Password" />
+            <TextField placeholder="Username" label=""  sx={{ 
+                '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light, borderWidth: 1 },
+                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light },
+              }}   />
+            <TextField placeholder="Password" label="" sx={{ 
+                '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light, borderWidth: 1 },
+                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light },
+              }}  />
 
             <Button sx={{ mt: 3 }} variant="contained">
               Login

@@ -14,8 +14,8 @@ const CustomAppbar = () => {
             src="./logo_praktika.png"
             sx={{ height: 95, width: 'auto', marginRight: 5, padding: ".2px", marginBottom: 1 }}
           />
-          <Button variant="text" sx={{ color: 'black',fontWeight: 'bold',backgroundColor: 'white', '&:hover': { fontWeight: 'bold', color: '#045bb1',} }}>Rent a House</Button>
-          <Button variant="text" sx={{ color: 'black',fontWeight: 'bold', backgroundColor: 'white' , '&:hover': {fontWeight: 'bold', color: '#045bb1',} }}>Favourites</Button>
+          <Button variant="text" sx={{ color: 'black',fontWeight: 'bold',backgroundColor: 'white', '&:hover': { fontWeight: 'bold', color: '#045bb1'} }}>Rent a House</Button>
+          <Button variant="text" sx={{ color: 'black',fontWeight: 'bold', backgroundColor: 'white' , '&:hover': {fontWeight: 'bold', color: '#045bb1'} }}>Favourites</Button>
         </Stack>
         <Button variant="contained">Login</Button>
       </Stack>

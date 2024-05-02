@@ -8,6 +8,7 @@ const routes = [
     { path: "/login", page: lazy(() => import("../pages/login/LoginPage")) },
     { path: "/profile", page: lazy(() => import("../pages/profile/ProfilePage")) },
     { path: "/sign-up", page: lazy(() => import("../pages/sign-up/SignUpPage")) },
+    { path: "/home", page: lazy(() => import("../pages/home/HomePage")) },
 ];
 
 export { routes };

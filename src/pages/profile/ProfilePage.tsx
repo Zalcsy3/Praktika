@@ -1,25 +1,99 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
-import CustomAppbar from '../../components/layout/custom-appbar/CustomAppbar';
-import CustomMain from '../../components/layout/custom-main/CustomMain';
-import { Box, Button } from '@mui/material';
+import { Stack, Paper, Typography, TextField, Button } from '@mui/material';
 import { theme } from '../../theme/theme';
+
 
 const ProfilePage = () => {
   return (
-    <>
-      <CustomMain>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-          <img src="./logo_praktika.png" alt="Logo" style={{ height: 200, width: 'auto', alignItems: 'center' }} />
+    <Layout>
+      <Stack
+        width={"100%"}
+        height={"100%"}
+        alignItems={"center"}
+        justifyContent={"center"}
 
-          {/* arnyekot hogy kell adjak? a gombnak, elevationnal nem megy hibat ir ki */}
-          <Button variant="text" sx={{ backgroundColor: 'white', color: 'black', fontWeight: 'bold', marginTop: 5, borderRadius: 0 }}>Best place for renting houses</Button>
-          <Button variant="contained" sx={{ mb: 2, marginTop: 3 }}>Login</Button>
-          <Button variant="outlined" sx={{ mb: 2, marginTop: 3, backgroundColor: 'transparent', color: theme.palette.text.secondary, textTransform: 'none', border: 'none', '&:hover': { border: 'none' } }}>The browse all options</Button>
-        </Box>
-      </CustomMain>
-    </>
+      >
+        <Paper elevation={5}
+          sx={{
+            width: 500,
+            p: 4,
+            borderRadius: 4,
+          }}
+        >
+
+          <Stack alignItems={"center"} justifyContent={"center"} gap={2} >
+            <Typography variant="h4" sx={{ mb: 3 }}>
+              Name
+              Age
+              Role:-
+            </Typography>    
+            <TextField 
+              placeholder="Username" 
+              label="" 
+              sx={{ 
+                '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light, borderWidth: 1 },
+                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light },
+              }} 
+            />
+            <TextField 
+              placeholder="Password" 
+              label="" 
+              type="password" 
+              sx={{ 
+                '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light, borderWidth: 1 },
+                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light },
+              }}   
+            />
+            <TextField 
+              placeholder="First name" 
+              label="" 
+              sx={{ 
+                '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light, borderWidth: 1 },
+                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light },
+              }}  
+            />
+             <TextField 
+              placeholder="Last name" 
+              label="" 
+              sx={{ 
+                '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light, borderWidth: 1 },
+                '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: theme.palette.primary.light },
+              }} 
+            />
+              <Stack direction="row" spacing={2}>
+              <Button
+                sx={{ 
+                  mt: 3, 
+                  backgroundColor: "red", 
+                  color: "white", 
+                  width: "50%", 
+                  textTransform: "none", // A gombok szélességének beállítása
+                }} 
+                variant="contained"
+              >
+                Discard
+              </Button>
+              <Button
+                sx={{ 
+                  mt: 3, 
+                  backgroundColor: "green", 
+                  color: "white", 
+                  width: "50%", 
+                  textTransform: "none", // A gombok szélességének beállítása
+                }} 
+                variant="contained"
+              >
+                Save
+              </Button>
+            </Stack>
+            </Stack>
+
+        </Paper>
+      </Stack >
+
+    </Layout >
   );
-}
+};
 
-export default ProfilePage
+export default ProfilePage;
